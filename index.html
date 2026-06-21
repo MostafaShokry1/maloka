@@ -6,7 +6,10 @@
     <title>عيد ميلاد سعيد Maloka ❤️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       :root {
         --pink: #ff4d94;
@@ -79,7 +82,9 @@
         justify-content: center;
         align-items: center;
         z-index: 999999;
-        transition: opacity 0.6s ease, visibility 0.6s;
+        transition:
+          opacity 0.6s ease,
+          visibility 0.6s;
       }
       .loader.hide {
         opacity: 0;
@@ -98,11 +103,18 @@
         animation: beat 1s infinite alternate;
       }
       @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.08); }
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.08);
+        }
       }
       @keyframes beat {
-        to { transform: scale(1.3); }
+        to {
+          transform: scale(1.3);
+        }
       }
 
       /* Background Canvas */
@@ -137,8 +149,13 @@
         animation: floatCard 4s ease-in-out infinite;
       }
       @keyframes floatCard {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
       }
       .hero h1 {
         font-size: 4.5rem;
@@ -157,7 +174,10 @@
         color: #f0f0f0;
       }
       .glow {
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px var(--pink), 0 0 45px var(--purple);
+        text-shadow:
+          0 0 15px rgba(255, 255, 255, 0.7),
+          0 0 30px var(--pink),
+          0 0 45px var(--purple);
       }
       .main-btn {
         margin-top: 30px;
@@ -189,11 +209,11 @@
         font-size: 2.8rem;
         margin-bottom: 50px;
         text-align: center;
-        text-shadow: 0 0 15px rgba(255,255,255,0.2);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         position: relative;
       }
       .section-title::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -10px;
         left: 50%;
@@ -259,12 +279,16 @@
         gap: 20px;
       }
       .time-box {
-        background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.03)
+        );
         padding: 25px 15px;
         border-radius: 25px;
         text-align: center;
-        border: 1px solid rgba(255,255,255,0.1);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       }
       .time-box h3 {
         font-size: 3rem;
@@ -304,10 +328,26 @@
         transform: translateX(-50%);
         border-radius: 20px;
       }
-      .layer1 { bottom: 0; width: 220px; height: 70px; background: #ff7eb6; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-      .layer2 { bottom: 60px; width: 175px; height: 60px; background: #ff9ccc; }
-      .layer3 { bottom: 110px; width: 130px; height: 50px; background: #ffc3df; }
-      
+      .layer1 {
+        bottom: 0;
+        width: 220px;
+        height: 70px;
+        background: #ff7eb6;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .layer2 {
+        bottom: 60px;
+        width: 175px;
+        height: 60px;
+        background: #ff9ccc;
+      }
+      .layer3 {
+        bottom: 110px;
+        width: 130px;
+        height: 50px;
+        background: #ffc3df;
+      }
+
       .candle {
         position: absolute;
         width: 12px;
@@ -328,15 +368,21 @@
         border-radius: 50% 50% 20% 20%;
         top: -18px;
         left: -2px;
-        box-shadow: 0 0 15px gold, 0 0 25px orange;
+        box-shadow:
+          0 0 15px gold,
+          0 0 25px orange;
         animation: flicker 0.1s infinite alternate;
       }
       .candle.off::before {
         display: none;
       }
       @keyframes flicker {
-        0% { transform: scale(1) rotate(-2deg); }
-        100% { transform: scale(1.1) rotate(2deg); }
+        0% {
+          transform: scale(1) rotate(-2deg);
+        }
+        100% {
+          transform: scale(1.1) rotate(2deg);
+        }
       }
 
       /* Overlay Screen */
@@ -367,19 +413,38 @@
       }
 
       @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
 
       /* Responsive */
       @media (max-width: 768px) {
-        .navbar { padding: 15px 20px; }
-        .nav-links { display: none; }
-        .hero h1 { font-size: 3.2rem; }
-        .hero h2 { font-size: 1.5rem; }
-        .wishes-grid { grid-template-columns: 1fr; gap: 15px; }
-        .countdown { grid-template-columns: repeat(2, 1fr); }
-        .section-title { font-size: 2.2rem; }
+        .navbar {
+          padding: 15px 20px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hero h1 {
+          font-size: 3.2rem;
+        }
+        .hero h2 {
+          font-size: 1.5rem;
+        }
+        .wishes-grid {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+        .countdown {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .section-title {
+          font-size: 2.2rem;
+        }
       }
     </style>
   </head>
@@ -412,7 +477,10 @@
         <h1 class="glow">Maloka ❤️</h1>
         <h2>🎂 عيد ميلاد سعيد يا أجمل ملوكة 🎂</h2>
         <p id="typingText"></p>
-        <button class="main-btn" onclick="document.getElementById('message').scrollIntoView()">
+        <button
+          class="main-btn"
+          onclick="document.getElementById('message').scrollIntoView()"
+        >
           ابدئي رحلتكِ الساحرة ✨
         </button>
       </div>
@@ -424,7 +492,10 @@
         <h2 class="section-title">💖 رسالة خاصة من القلب</h2>
         <div class="glass-box">
           <div class="message">
-            إلى ملوكة... اليوم ليس يوماً عادياً... بل هو اليوم الذي أشرقت فيه روح جميلة أضاءت العالم بابتسامتها ونقائها. أتمنى أن تكون كل أيامك القادمة مليئة بالسعادة اللامتناهية، والنجاح والتوفيق والحب الذي تستحقينه. كل عام وأنتِ بمليار خير وسعادة ❤️
+            إلى ملوكة... اليوم ليس يوماً عادياً... بل هو اليوم الذي أشرقت فيه
+            روح جميلة أضاءت العالم بابتسامتها ونقائها. أتمنى أن تكون كل أيامك
+            القادمة مليئة بالسعادة اللامتناهية، والنجاح والتوفيق والحب الذي
+            تستحقينه. كل عام وأنتِ بمليار خير وسعادة ❤️
           </div>
         </div>
       </div>
@@ -460,17 +531,26 @@
       <div class="container">
         <h2 class="section-title">🌷 أمنيات العام الجديد لكِ</h2>
         <div class="wishes-grid">
-          <div class="wish-card" onclick="triggerWishExplosion('فرحة تملأ قلبكِ الأبيض ✨')">
+          <div
+            class="wish-card"
+            onclick="triggerWishExplosion('فرحة تملأ قلبكِ الأبيض ✨')"
+          >
             <span class="wish-icon">✨</span>
             <h4>سعادة لا تنتهي</h4>
-            <p>ضحكة من القلب تفارق وجهكِ الجميل أبداً.</p>
+            <p>ضحكة من القلب لا تفارق وجهكِ الجميل أبداً.</p>
           </div>
-          <div class="wish-card" onclick="triggerWishExplosion('نجاحاً يفوق كل أحلامكِ الكبيرة 🌟')">
+          <div
+            class="wish-card"
+            onclick="triggerWishExplosion('نجاحاً يفوق كل أحلامكِ الكبيرة 🌟')"
+          >
             <span class="wish-icon">🌟</span>
             <h4>نجاح مبهر</h4>
             <p>عام يحمل لكِ تحقيق كل الأمنيات والخطوات الموفقة.</p>
           </div>
-          <div class="wish-card" onclick="triggerWishExplosion('راحة بال وسلاماً لروحكِ الطاهرة 🕊️')">
+          <div
+            class="wish-card"
+            onclick="triggerWishExplosion('راحة بال وسلاماً لروحكِ الطاهرة 🕊️')"
+          >
             <span class="wish-icon">🕊️</span>
             <h4>سلام وراحة بال</h4>
             <p>أن يمتلئ قلبكِ بالطمأنينة ويزول عنه أي هم وثقل.</p>
@@ -485,8 +565,18 @@
         <h2 class="section-title">🎁 صندوق المفاجأة السري</h2>
         <div class="glass-box" style="text-align: center">
           <div id="giftBox">🎁</div>
-          <h3 style="margin-top: 20px; color: #ff9ccc;">اضغطي لفتح الهدية!</h3>
-          <div id="giftMessage" style="display: none; margin-top: 25px; font-size: 1.6rem; font-weight: 700; color: #fff; text-shadow: 0 0 10px var(--pink);">
+          <h3 style="margin-top: 20px; color: #ff9ccc">اضغطي لفتح الهدية!</h3>
+          <div
+            id="giftMessage"
+            style="
+              display: none;
+              margin-top: 25px;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: #fff;
+              text-shadow: 0 0 10px var(--pink);
+            "
+          >
             🎉 ❤️ أنتِ الهدية الأجمل والأثمن في هذا العالم كُله ❤️ 🎉
           </div>
         </div>
@@ -497,20 +587,22 @@
     <section id="cake-sec">
       <div class="container">
         <h2 class="section-title">🎂 تمني أمنية واطفئي الشمعة</h2>
-        <div class="glass-box" style="text-align: center;">
+        <div class="glass-box" style="text-align: center">
           <div id="cake">
             <div class="layer layer1"></div>
             <div class="layer layer2"></div>
             <div class="layer layer3"></div>
             <div class="candle" id="candle"></div>
           </div>
-          <p style="margin-top: 30px; font-size: 1.2rem; color: #ff9ccc;">اضغطي على لهب الشمعة لتطفيها ✨</p>
+          <p style="margin-top: 30px; font-size: 1.2rem; color: #ff9ccc">
+            اضغطي على لهب الشمعة لتطفيها ✨
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Music -->
-    <section style="margin-bottom: 50px;">
+    <section style="margin-bottom: 50px">
       <div class="container">
         <div class="glass-box" style="text-align: center">
           <h2>🎵 نغمات عيد الميلاد الرومانسية</h2>
@@ -525,7 +617,8 @@
       // ============================================================
       let audioCtx = null;
       function initAudio() {
-        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (!audioCtx)
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       }
       function playTone(freq, duration, type = "sine", volume = 0.12) {
         try {
@@ -535,7 +628,10 @@
           osc.type = type;
           osc.frequency.value = freq;
           gain.gain.setValueAtTime(volume, audioCtx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+          gain.gain.exponentialRampToValueAtTime(
+            0.01,
+            audioCtx.currentTime + duration,
+          );
           osc.connect(gain);
           gain.connect(audioCtx.destination);
           osc.start();
@@ -564,8 +660,11 @@
       let height = (canvas.height = window.innerHeight);
 
       let stars = Array.from({ length: 70 }, () => ({
-        x: Math.random() * width, y: Math.random() * height, r: Math.random() * 2,
-        alpha: Math.random(), speed: 0.01 + Math.random() * 0.015
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 2,
+        alpha: Math.random(),
+        speed: 0.01 + Math.random() * 0.015,
       }));
 
       let particles = [];
@@ -573,7 +672,8 @@
 
       class FireworkParticle {
         constructor(x, y, color) {
-          this.x = x; this.y = y;
+          this.x = x;
+          this.y = y;
           this.color = color;
           this.radius = Math.random() * 2 + 1;
           const angle = Math.random() * Math.PI * 2;
@@ -584,7 +684,8 @@
           this.decay = 0.012 + Math.random() * 0.015;
         }
         update() {
-          this.x += this.vx; this.y += this.vy;
+          this.x += this.vx;
+          this.y += this.vy;
           this.vy += 0.05; // Gravity
           this.alpha -= this.decay;
         }
@@ -600,34 +701,48 @@
       }
 
       function createFirework(x, y) {
-        const colors = ["#ff4d94", "#8b5cf6", "#ffffff", "#ffd700", "#00f7ff", "#ff8da1"];
+        const colors = [
+          "#ff4d94",
+          "#8b5cf6",
+          "#ffffff",
+          "#ffd700",
+          "#00f7ff",
+          "#ff8da1",
+        ];
         const color = colors[Math.floor(Math.random() * colors.length)];
-        for (let i = 0; i < 50; i++) particles.push(new FireworkParticle(x, y, color));
+        for (let i = 0; i < 50; i++)
+          particles.push(new FireworkParticle(x, y, color));
         playTone(130, 0.25, "triangle", 0.04);
       }
 
       // Mouse interactive trail effect
       window.addEventListener("mousemove", (e) => {
-        if(Math.random() < 0.15) { // Control density
+        if (Math.random() < 0.15) {
+          // Control density
           cursorHearts.push({
-            x: e.clientX, y: e.clientY,
+            x: e.clientX,
+            y: e.clientY,
             size: Math.random() * 12 + 8,
             txt: ["❤️", "💖", "✨", "💕"][Math.floor(Math.random() * 4)],
             vx: (Math.random() - 0.5) * 2,
             vy: -1 - Math.random() * 2,
-            alpha: 1
+            alpha: 1,
           });
         }
       });
 
       // Touch screen support for active trail
       window.addEventListener("touchmove", (e) => {
-        if(Math.random() < 0.15) {
+        if (Math.random() < 0.15) {
           const t = e.touches[0];
           cursorHearts.push({
-            x: t.clientX, y: t.clientY,
+            x: t.clientX,
+            y: t.clientY,
             size: Math.random() * 12 + 8,
-            txt: "❤️", vx: (Math.random() - 0.5) * 2, vy: -2, alpha: 1
+            txt: "❤️",
+            vx: (Math.random() - 0.5) * 2,
+            vy: -2,
+            alpha: 1,
           });
         }
       });
@@ -635,8 +750,15 @@
       // Wish Card Exploded Reaction
       function triggerWishExplosion(message) {
         playHappySound();
-        for(let i=0; i<8; i++) {
-          setTimeout(() => createFirework(Math.random() * width, Math.random() * height * 0.7), i * 120);
+        for (let i = 0; i < 8; i++) {
+          setTimeout(
+            () =>
+              createFirework(
+                Math.random() * width,
+                Math.random() * height * 0.7,
+              ),
+            i * 120,
+          );
         }
         // Custom temporary notification
         const alertBox = document.createElement("div");
@@ -655,7 +777,7 @@
 
         // Stars Render
         ctx.fillStyle = "white";
-        stars.forEach(s => {
+        stars.forEach((s) => {
           s.alpha += s.speed;
           if (s.alpha > 1 || s.alpha < 0.1) s.speed = -s.speed;
           ctx.globalAlpha = Math.max(0.1, Math.min(1, s.alpha));
@@ -675,14 +797,15 @@
         // Interactive Cursor Hearts Render
         for (let i = cursorHearts.length - 1; i >= 0; i--) {
           let h = cursorHearts[i];
-          h.x += h.vx; h.y += h.vy;
+          h.x += h.vx;
+          h.y += h.vy;
           h.alpha -= 0.02;
           ctx.save();
           ctx.globalAlpha = Math.max(0, h.alpha);
           ctx.font = `${h.size}px Arial`;
           ctx.fillText(h.txt, h.x, h.y);
           ctx.restore();
-          if(h.alpha <= 0) cursorHearts.splice(i, 1);
+          if (h.alpha <= 0) cursorHearts.splice(i, 1);
         }
         ctx.globalAlpha = 1;
 
@@ -692,7 +815,13 @@
 
       // Random Firework on background clicks
       window.addEventListener("click", (e) => {
-        if(e.target.tagName !== 'BUTTON' && e.target.id !== 'giftBox' && e.target.id !== 'candle' && !e.target.closest('.wish-card') && !e.target.closest('.navbar')) {
+        if (
+          e.target.tagName !== "BUTTON" &&
+          e.target.id !== "giftBox" &&
+          e.target.id !== "candle" &&
+          !e.target.closest(".wish-card") &&
+          !e.target.closest(".navbar")
+        ) {
           createFirework(e.clientX, e.clientY);
           playTone(550, 0.05, "sine", 0.04);
         }
@@ -707,7 +836,8 @@
       // TYPING TEXT
       // ============================================================
       const typingText = document.getElementById("typingText");
-      const text = "كل سنة وأنتِ غالية وسعيدة يا Maloka ❤️، هذا اليوم ليس يوماً عادياً.. بل هو يوم ميلاد أعذب وأجمل روح أضاءت دنيانا وجعلتها أكثر جمالاً 💖";
+      const text =
+        "كل سنة وأنتِ غالية وسعيدة يا Maloka ❤️، هذا اليوم ليس يوماً عادياً.. بل هو يوم ميلاد أعذب وأجمل روح أضاءت دنيانا وجعلتها أكثر جمالاً 💖";
       let index = 0;
       function type() {
         if (index < text.length) {
@@ -726,11 +856,19 @@
         const now = new Date().getTime();
         const diff = targetDate - now;
         if (diff <= 0) return;
-        
-        document.getElementById("days").innerText = String(Math.floor(diff / 86400000)).padStart(2, "0");
-        document.getElementById("hours").innerText = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, "0");
-        document.getElementById("minutes").innerText = String(Math.floor((diff % 3600000) / 60000)).padStart(2, "0");
-        document.getElementById("seconds").innerText = String(Math.floor((diff % 60000) / 1000)).padStart(2, "0");
+
+        document.getElementById("days").innerText = String(
+          Math.floor(diff / 86400000),
+        ).padStart(2, "0");
+        document.getElementById("hours").innerText = String(
+          Math.floor((diff % 86400000) / 3600000),
+        ).padStart(2, "0");
+        document.getElementById("minutes").innerText = String(
+          Math.floor((diff % 3600000) / 60000),
+        ).padStart(2, "0");
+        document.getElementById("seconds").innerText = String(
+          Math.floor((diff % 60000) / 1000),
+        ).padStart(2, "0");
       }
       setInterval(updateCountdown, 1000);
       updateCountdown();
@@ -739,16 +877,24 @@
       // INTERACTIVE ACTIONS
       // ============================================================
       // Gift Box Open
-      document.getElementById("giftBox").addEventListener("click", function() {
+      document.getElementById("giftBox").addEventListener("click", function () {
         this.style.transform = "scale(1.2) rotate(10deg)";
         this.innerHTML = "🎉";
         document.getElementById("giftMessage").style.display = "block";
         playHappySound();
-        for(let i=0; i<8; i++) setTimeout(() => createFirework(Math.random()*width, Math.random()*height*0.5), i*120);
+        for (let i = 0; i < 8; i++)
+          setTimeout(
+            () =>
+              createFirework(
+                Math.random() * width,
+                Math.random() * height * 0.5,
+              ),
+            i * 120,
+          );
       });
 
       // Candle Extinguish Cake
-      document.getElementById("candle").addEventListener("click", function() {
+      document.getElementById("candle").addEventListener("click", function () {
         this.classList.add("off");
         playHappySound();
 
@@ -761,17 +907,29 @@
           <button class="main-btn" onclick="this.parentElement.remove()">دخول للموقع 💖</button>
         `;
         document.body.appendChild(overlay);
-        for(let i=0; i<15; i++) setTimeout(() => createFirework(Math.random()*width, Math.random()*height*0.6), i*150);
+        for (let i = 0; i < 15; i++)
+          setTimeout(
+            () =>
+              createFirework(
+                Math.random() * width,
+                Math.random() * height * 0.6,
+              ),
+            i * 150,
+          );
       });
 
       // Simulated Music Control
       let isPlaying = false;
-      document.getElementById("musicBtn").addEventListener("click", function() {
-        initAudio();
-        isPlaying = !isPlaying;
-        this.innerText = isPlaying ? "إيقاف الموسيقى 🔇" : "تشغيل الموسيقى 🎶";
-        if(isPlaying) playHappySound();
-      });
+      document
+        .getElementById("musicBtn")
+        .addEventListener("click", function () {
+          initAudio();
+          isPlaying = !isPlaying;
+          this.innerText = isPlaying
+            ? "إيقاف الموسيقى 🔇"
+            : "تشغيل الموسيقى 🎶";
+          if (isPlaying) playHappySound();
+        });
 
       if (/Mobi|Android/i.test(navigator.userAgent)) {
         stars = stars.slice(0, 30); // Save performance on phones
